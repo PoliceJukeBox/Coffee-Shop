@@ -159,6 +159,26 @@ section{
 .header .cart-items-container .cart-item img{
     height: 7rem;
 }
+.header .cart-items-container .cart-item .content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+.header .cart-items-container .cart-item .content .price{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+}
+
+    /* ----------------------Home Section------------------------------ */
+
+.home{
+    
+}
+
 
 
 
