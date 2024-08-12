@@ -53,7 +53,7 @@ section{
 .btn{
     margin-top: 1rem;
     display: inline-block;
-    padding: 9rem 3rem;
+    padding: .9rem 3rem;
     font-size: 1.7rem;
     color: #fff;
     background: var(--main-color);
@@ -490,4 +490,61 @@ section{
     color: var(--main-color);
 }
 
+/* ----------------------Media queries------------------------------ */
+
+@media screen and (max-width:991px){
+    html{
+        font-style: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem; 
+        font-style: 2rem;
+    }
+    .header .search-form{
+        width: 90%;
+        right: 2rem;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-style: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    html{
+        font-style: 50%;
+    }
+}
 
