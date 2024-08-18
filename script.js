@@ -19,3 +19,13 @@ document.querySelector('#cart-btn').onclick = () =>{
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
 }
+
+//-----------------------EmailJs------------------------
+
+function sendMail(){
+    emailjs.send("service_p4gcevn","template_7cztx88",{
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        number: document.getElementById("number").value,
+    }).then(alert("Email Sent!"));
+}
